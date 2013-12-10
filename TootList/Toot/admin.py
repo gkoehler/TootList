@@ -3,6 +3,6 @@ from models import Toot
 
 # Register your models here.
 class TootAdmin(admin.ModelAdmin):
-	list_display = ['text', 'pub_date']
+	list_display = ['pub_date', 'text']
 
 admin.site.register(Toot, TootAdmin)
